@@ -109,6 +109,7 @@ if(isset($_POST['submit'])) {
             <div class="col-md-1"></div>
         </div>
          <!-- Popup Modal -->
+         <!--
        <div  style = "font-size:18px; color:#219ab3" id="popupmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="popupmodalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -146,7 +147,7 @@ if(isset($_POST['submit'])) {
             </div>
         </div>
     </div>
-    
+    -->
 
     <?php include 'includes/footer.php'; ?>
   <script type="text/javascript">
@@ -155,7 +156,7 @@ if(isset($_POST['submit'])) {
          if(getCookie("treasure_updates_4")==="") {
              setCookie("treasure_updates_4",1,3); 
          }
-		  $("#popupmodal").modal();
+		  //$("#popupmodal").modal();
          
       });
       function getCookie(cname)

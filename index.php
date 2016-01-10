@@ -84,13 +84,13 @@ $dm = new dataManager();
                  echo '<li><a href="logout.php">Logout</a></li></ul>';
              } elseif($dm->started()) { ?>   
                     <li>
-                        <a class="page-scroll" href="leader_frozen.php" target= "_blank">LeaderBoard</a>
+                        <a class="page-scroll" href="leader_live.php">LeaderBoard</a>
 					</li>
                     <li>
-                        <a class="page-scroll" href="#register">Register</a>
+                        <a class="page-scroll" href="register.php">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="login.php" target= "_blank">Login</a>
+                        <a class="page-scroll" href="login.php" >Login</a>
                     </li>
 			
              <?php } ?>
@@ -200,7 +200,7 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
 				<!--	<h3 style = "text-align:center;">Almost There 2016 has officially ended. <br><br>The LeaderBoard is frozen. <br><br>But you can continue playing!! </h3><br>
 				-->
 				<strong>	1. This event is for citizens of India only. Any international participation is welcome but they won't be eligible for the prizes.<br><br>
-2. The theme for our Hunt is Computer Science and I.T. All answers comply with the theme.<br><br>
+2. There is no specific theme for the contest. Answers may be from any field of knowledge.<br><br>
 3. Your answers should not include spaces or special characters.<br>For eg. If the answer is "mozilla firefox",then just type in "mozillafirefox" as the answer.<br><br>
 4. Check for all possible variations of the answer.<br><br>
 5. We are watching your activities. If the Page moderator suspects any illegitimate activity then you shall be banned from the event.<br><br>

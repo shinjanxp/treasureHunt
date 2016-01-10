@@ -12,7 +12,7 @@ class dataManager {
     private $db_name = MYSQL_DB;
 
     function __construct() {
-        $this->start = mktime(21,0,0,1,10,2016);
+        $this->start = mktime(14,0,0,1,10,2016);
         try {
         $this->db_conn = new PDO("mysql:host=$this->host;dbname=$this->db_name;",MYSQL_USER,MYSQL_PASSWORD);
         }  catch (PDOException $ex) {

@@ -1,10 +1,11 @@
 <?php
 session_start();
 require_once 'class/dataManager.php';
+$dm = new dataManager();
 if(!$dm->started())
     header ('Location:nice-try.php');
 if(isset($_POST['submit'])) {
-    $dm = new dataManager();
+
 	$dm->__construct();
     if($dm->checkDuplicateUser($_POST['username'])) $error_msg = "Username already exists!";
     else {
