@@ -1,7 +1,8 @@
 <?php
 session_start();
 require_once 'class/dataManager.php';
-
+if(!$dm->started())
+    header ('Location:nice-try.php');
 if(isset($_POST['submit'])) {
     $dm = new dataManager();
 	$dm->__construct();

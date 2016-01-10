@@ -61,16 +61,14 @@ $dm = new dataManager();
                     <li>
                         <a class="page-scroll" href="#about">About</a>
 					</li>
-					 <li>
-                        <a class="page-scroll" href="leader_frozen.php" target= "_blank">LeaderBoard</a>
-					</li>
+					 
 					
 					
 					<?php 
              require_once 'class/dataManager.php';
              $dm = new dataManager();
              
-             if($dm->isLogged()) {
+             if($dm->started() && $dm->isLogged()) {
                  $level = $dm->getLevel(T_USER_ID);
                  
                  if($level > T_MAXLEVEL) {
@@ -84,13 +82,16 @@ $dm = new dataManager();
                  echo '<li><a href="update.php">Update Details</a></li>';
                  echo '<li class="divider page-scroll"></li>';
                  echo '<li><a href="logout.php">Logout</a></li></ul>';
-             } else { ?>   
-           <li>
-                 <a class="page-scroll" href="#register">Register</a>
-            </li>
-            <li>
-                  <a class="page-scroll" href="login.php" target= "_blank">Login</a>
-			</li>
+             } elseif($dm->started()) { ?>   
+                    <li>
+                        <a class="page-scroll" href="leader_frozen.php" target= "_blank">LeaderBoard</a>
+					</li>
+                    <li>
+                        <a class="page-scroll" href="#register">Register</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="login.php" target= "_blank">Login</a>
+                    </li>
 			
              <?php } ?>
 					
@@ -107,17 +108,18 @@ $dm = new dataManager();
     <header class="intro">
         <div class="intro-body">
             <div class="container">
-		
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-					    <a href ="play.php" class="btn btn-default1 btn-xlarge btn-lg" target = "_blank">Start Playing Now</a>
-<div class = "clock btn">
-					<a href="#" id="timer"></a>
-					</div>
-        </div>
+                        <?php if($dm->started()){?>
+                        <a href ="play.php" class="btn btn-default1 btn-xlarge btn-lg">Start Playing Now</a>
+                        <?php }?>
+                        <div class = "clock btn">
+                            <a href="#" id="timer"></a>
+                        </div>
                     </div>
-
+                </div>
             </div>
+        </div>
     </header>
 
     <!-- Rules Section -->
@@ -146,21 +148,6 @@ The game shall comprise of <strong>33</strong> levels . In each level you will h
                     </div>
     </section>
 
-    <!-- Register Section -->
-    <section id="register" class="content-section text-center">
-        <div class="register-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Register</h2>
-                    <p>Fill up a simple form and get yourself registered for Almost There 2016.<br>The event will go live from 13th January, 2016 at 9 P.M. IST</p>
-    <a href="register.php" class="btn btn-default2 btn-lg" target = "_blank">Register yourself</a>
-</form>
-                   
-                </div>
-            </div>
-        </div>
-    </section>
-
 	
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -173,16 +160,18 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
                
 			   
 				<p>We value your feedback. Feel free to provide your feedback to us. </p>
-                <p><a href="mailto:almostthere@events.iem-innovacion.in">almostthere@events.iem-innovacion.in</a>
+                <p><a href="mailto:almostthere@iem-innovacion.in">almostthere@iem-innovacion.in</a>
                 </p>
 				<h4>Concept creator and Question setter</h4>
-				<p><a href="https://www.facebook.com/kapish.malhotra.7?fref=ts" target = "_blank">Kaustuv Mukherjee</a>
+				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherjee</a><br>
+				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a>
 				</p>
 				<h4>Web Site Development and Maintenance Team</h4>
 				<p><a href="https://www.facebook.com/daggerhunt?fref=ts" target = "_blank">Aryak Sengupta</a><br>
-				<a href="https://www.facebook.com/arupam.sengupta?fref=ts" target = "_blank">Arupam Sengupta</a></p>
+				<a href="https://www.facebook.com/arupam.sengupta?fref=ts" target = "_blank">Arupam Sengupta</a><br>
+				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a></p>
 				<h4>Website Moderator</h4>
-				<p><a href="https://www.facebook.com/sayan2010?fref=ts" target = "_blank">Kaustuv Mukherjee</a></p>
+				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherjee</a></p>
 				<h4>Special Thanks To</h4>
 				<p><a href="https://www.facebook.com/subhodip.kumar?fref=ts" target = "_blank">Subhodip Kumar</a><br>
 				<a href="https://www.facebook.com/koustuvsinha?fref=ts" target = "_blank">Koustuv Sinha</a></p>
@@ -221,7 +210,7 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
 9. Keep an eye on the forum for hints and updates from the Admins.<br><br>
 <div style = "text-align:center; font-size:25px;">Play Fair,Play Hard. Good Luck!</div><br><br>
 
-<div style = "text-align:center;">Click <a style = "color:black;" href = "http://almost-there.iem-innovacion.in/#rules"> HERE </a> for more rules.</div>
+<div style = "text-align:center;">Click <a style = "color:black;" href = "#rules"> HERE </a> for more rules.</div>
 				</strong>	
 					</p>
 

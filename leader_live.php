@@ -3,6 +3,8 @@ session_start();
 require_once 'class/dataManager.php';
 require_once 'class/user.inc.php';
 $dm = new dataManager();
+if(!$dm->started())
+    header ('Location:nice-try.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

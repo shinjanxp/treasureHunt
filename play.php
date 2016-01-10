@@ -1,5 +1,11 @@
 <?php
+// header ('Location:nice-try.php');
 session_start();
+require_once 'class/dataManager.php';
+require_once 'class/user.inc.php';
+$dm = new dataManager();
+if(!$dm->started())
+    header ('Location:nice-try.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,9 +50,8 @@ session_start();
             <div class="col-md-10">
                 
                 <?php 
-                require_once 'class/dataManager.php';
-                require_once 'class/user.inc.php';
-                $dm = new dataManager();
+                
+                
                 if($dm->isLogged()) {
                  
                $level = $dm->getLevel(T_USER_ID);	  

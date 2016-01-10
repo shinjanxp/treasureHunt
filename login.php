@@ -1,9 +1,12 @@
 <?php
 session_start();
 require_once 'class/dataManager.php';
+$dm = new dataManager();
 
+if(!$dm->started()){
+    header ('Location:nice-try.php');
+}
 if(isset($_POST['submit'])) {
-    $dm = new dataManager();
     $res = $dm->loginUser($_POST['username'], $_POST['password']);
     if($res===1) header ('Location:play.php');
     else $error = 1;

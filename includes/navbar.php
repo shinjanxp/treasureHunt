@@ -24,7 +24,7 @@
                         <a href="index.php#about">ABOUT</a>
 					</li>
 					 <li>
-                        <a href="leader_frozen.php">LEADERBOARD</a>
+                        <a href="leader_live.php">LEADERBOARD</a>
 					</li>
 					
 					<?php 

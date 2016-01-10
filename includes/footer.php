@@ -27,8 +27,13 @@
     <script src="js/bootstrap-notify.js"></script>
     <script type="text/javascript">
      
-var liftoffTime = new Date("January 13, 2016 21:00:00");
-$('#timer').countdown({until: liftoffTime, compact: true, 
+var liftoffTime = new Date("January 10, 2016 21:00:00");
+var now=new Date();
+var touchdownTime = new Date("January 13, 2016 21:00:00");
+var counter = liftoffTime;
+if(now>liftoffTime)
+    counter=touchdownTime
+$('#timer').countdown({until: counter, compact: true, 
     layout: '<b>{dn} {dl} {hnn}{sep}{mnn}{sep}{snn}</b> {desc}', 
     description: ''});
  
