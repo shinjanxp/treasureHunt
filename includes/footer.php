@@ -27,9 +27,9 @@
     <script src="js/bootstrap-notify.js"></script>
     <script type="text/javascript">
      
-var liftoffTime = new Date("January 10, 2016 21:00:00");
+var liftoffTime = new Date("January 10, 2016 23:00:00");
 var now=new Date();
-var touchdownTime = new Date("January 13, 2016 21:00:00");
+var touchdownTime = new Date("January 13, 2016 22:00:00");
 var counter = liftoffTime;
 if(now>liftoffTime)
     counter=touchdownTime

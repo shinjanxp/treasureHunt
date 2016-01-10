@@ -10,9 +10,9 @@ class dataManager {
     public $user_id;
     private $host = MYSQL_HOST ;
     private $db_name = MYSQL_DB;
-
+    
     function __construct() {
-        $this->start = mktime(14,0,0,1,10,2016);
+        $this->start = mktime(23,0,0,1,10,2016);
         try {
         $this->db_conn = new PDO("mysql:host=$this->host;dbname=$this->db_name;",MYSQL_USER,MYSQL_PASSWORD);
         }  catch (PDOException $ex) {
@@ -26,6 +26,7 @@ class dataManager {
         else
             return true;
     }
+    
     function loginUser($username,$password) {
         $pwdHasher = new PasswordHash(8, FALSE);
         

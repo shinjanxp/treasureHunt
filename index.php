@@ -167,8 +167,9 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
 				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a>
 				</p>
 				<h4>Web Site Development and Maintenance Team</h4>
-				<p><a href="https://www.facebook.com/daggerhunt?fref=ts" target = "_blank">Aryak Sengupta</a><br>
-				<a href="https://www.facebook.com/arupam.sengupta?fref=ts" target = "_blank">Arupam Sengupta</a><br>
+				<p><a href="https://www.facebook.com/daggerhunt" target = "_blank">Aryak Sengupta</a><br>
+				<a href="https://www.facebook.com/arupam.sengupta" target = "_blank">Arupam Sengupta</a><br>
+				<a href="https://www.facebook.com/devarati.tripathi" target = "_blank">Devarati Tripathi</a><br>
 				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a></p>
 				<h4>Website Moderator</h4>
 				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherjee</a></p>
