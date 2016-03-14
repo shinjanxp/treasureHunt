@@ -137,7 +137,7 @@ A participant will not be eligible for any prize if he/she registers with incorr
                             
  Shall any Pirate seek any unfair help or recourse to unethical means. He/She shall be exiled from the quest.<br><br>
  In case of any dispute,refer to 1st rule.<br><br>
-The game shall comprise of <strong>33</strong> levels . In each level you will have to solve a riddle/puzzle to proceed. The number of levels can be changed by the administrator if required.<br><br>
+The game shall comprise of <strong>25</strong> levels . In each level you will have to solve a riddle/puzzle to proceed. The number of levels can be changed by the administrator if required.<br><br>
  Clues can be present any where on the page. The source code,image names,urls etc. Shall all serve as angels guiding thee on thy lofty quest.<br><br>
  The answers are NOT case sensitive.For e.g, "Amazon" ,"aMaZon","amaZON" are all the same. Also,answers do NOT include any special characters.<br><br>
  Hints shall be provided on the forum from time to time, depending upon the generosity of the Mod.<br><br>
@@ -163,7 +163,7 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
                 <p><a href="mailto:almostthere@iem-innovacion.in">almostthere@iem-innovacion.in</a>
                 </p>
 				<h4>Concept creator and Question setter</h4>
-				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherjee</a><br>
+				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherji</a><br>
 				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a>
 				</p>
 				<h4>Web Site Development and Maintenance Team</h4>
@@ -172,7 +172,7 @@ Almost There is an on-site treasure hunt contest consisting of many levels. The 
 				<a href="https://www.facebook.com/devarati.tripathi" target = "_blank">Devarati Tripathi</a><br>
 				<a href="https://www.facebook.com/mitra.zgod" target = "_blank">Shinjan Mitra</a></p>
 				<h4>Website Moderator</h4>
-				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherjee</a></p>
+				<p><a href="https://www.facebook.com/theKaustuv" target = "_blank">Kaustuv Mukherji</a></p>
 				<h4>Special Thanks To</h4>
 				<p><a href="https://www.facebook.com/subhodip.kumar?fref=ts" target = "_blank">Subhodip Kumar</a><br>
 				<a href="https://www.facebook.com/koustuvsinha?fref=ts" target = "_blank">Koustuv Sinha</a></p>

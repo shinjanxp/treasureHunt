@@ -27,7 +27,7 @@ if($dm->isLogged()) {
     $dm->updateAttempt(T_USER_ID, $level);
     $passed = $dm->getPassed($new_level);
     $explanation = $dm->getExplanation($level);
-    $newquestion = file_get_contents('../private/q'. $new_level . '.html');
+    $newquestion = file_get_contents('../private/'. $new_level . '.html');
     $result = array('result' => 1,'explanation' => $explanation,'newquestion' => $newquestion,'passed' => $passed,'level' => $new_level);
     }
     echo json_encode($result);

@@ -56,7 +56,6 @@ if(!$dm->started())
                         <div class="col-md-4">
                             <h4 id="levelno" align="center"><strong>LEADER BOARD</strong></h4>
                         </div>    
-                        <div class="col-md-4" style="color:green; text-align: center;"><h5><span class="glyphicon glyphicon-off"></span><strong> FROZEN </strong></h5></div>
                     </div>
                 </div>
                 <br>
